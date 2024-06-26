@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 200px;
+  text-align: center;
+}
+
+.mainTitle {
+  font-size: 20px;
+  background-color: darkslategray;
+  border-radius: 10px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  & > span:first-child , :last-child{
+    color: rgb(252, 252, 40);
+  }
+  & > span:nth-child(2){
+    color: rgb(52, 190, 192);
+  }
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+
+  & > p {
+    font-size: 20px;
+    color: rgb(52, 190, 192);
+  }
+}
+
+.content {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.X {
+  color: rgb(52, 190, 192);
+}
+
+.O {
+  color: rgb(252, 252, 40);
+}
+
+
+.bigBox {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  /* background-color: rgb(224, 217, 217); */
+  align-items: center;
+  justify-items: center;
+  /* padding-inline: 200px; */
+  gap: 10px 10px;
+
+  width: 30%;
+  margin-inline: auto;
+
+  & > div:nth-child(1) {
+    border-bottom: 4px solid gray;
+    border-right: 4px solid gray;
+  }
+  & > div:nth-child(2) {
+    border-bottom: 4px solid gray;
+    border-right: 4px solid gray;
+  }
+  & > div:nth-child(3) {
+    border-bottom: 4px solid gray;
+  }
+  & > div:nth-child(4) {
+    border-bottom: 4px solid gray;
+    border-right: 4px solid gray;
+  }
+  & > div:nth-child(5) {
+    border-bottom: 4px solid gray;
+    border-right: 4px solid gray;
+  }
+  & > div:nth-child(6) {
+    border-bottom: 4px solid gray;
+  }
+  & > div:nth-child(7) {
+    border-right: 4px solid gray;
+  }
+  & > div:nth-child(8) {
+    border-right: 4px solid gray;
+  }
+}
+
+.smallBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.boxAndButton {
+  & > button {
+    float: right;
+    background-color: transparent;
+    font-size: 30px;
+  }
+}
